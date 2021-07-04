@@ -1,0 +1,18 @@
+spring:
+#  security:
+#    user:
+#      name: wmh
+#      password: wmh
+  datasource:
+    username: mysql
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      username: root
+      password: 123456
+      url: jdbc:mysql://localhost:3306/wmh_demo?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      filter: stat
+server:
+  port: 8888
+#  servlet:
+#    context-path: /wmh
